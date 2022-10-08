@@ -45,6 +45,3 @@ poem.pages
 // Error: Prope
 
 console.log((x => x)("Some"))
-
-
-
