@@ -41,13 +41,11 @@ const trios: [string, [number, boolean]][] = [
 trios.forEach(trio => logTrio(...trio)) // Ok
 trios.forEach(logTrio)
 
-
 // -----------------------
-
 
 // Return type: readonly [string, number]
 function firstCharAndSizeAsConst(input: string) {
-  return [input !== "" ? input[0] as string : -1, input.length] as const
+  return [input !== "" ? (input[0] as string) : -1, input.length] as const
 }
 // firstChar type: string
 // size type: number
