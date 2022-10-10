@@ -13,9 +13,7 @@ class FailingAnnouncer extends GradeAnnouncer {
   constructor() {}
 }
 
-class Some extends GradeAnnouncer {
-    
-}
+class Some extends GradeAnnouncer {}
 
 const some = new Some(Math.random() * 100)
 console.log(some.message)
